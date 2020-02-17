@@ -58,5 +58,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        kali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if ((angka_pertama.getText().length() > 0) && (angka_kedua.getText().length() > 0)) {
+                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
+                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
+                    double result = angka1 * angka2;
+                    hasil.setText(Double.toString(result));
+                } else {
+                    Toast toast = Toast.makeText(MainActivity.this, "Mohon masukkan angka pertama & kedua", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            }
+        });
     }
 }
