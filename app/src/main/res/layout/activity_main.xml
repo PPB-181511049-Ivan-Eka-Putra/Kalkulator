@@ -91,4 +91,12 @@
         android:layout_below="@+id/tambah"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bagi"
+        android:layout_above="@+id/bersihkan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
