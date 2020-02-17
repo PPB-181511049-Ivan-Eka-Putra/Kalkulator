@@ -83,4 +83,12 @@
         android:layout_toRightOf="@+id/tambah"
         android:layout_toEndOf="@+id/tambah" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BERSIHKAN"
+        android:id="@+id/bersihkan"
+        android:layout_below="@+id/tambah"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
