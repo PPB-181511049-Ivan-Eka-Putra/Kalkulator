@@ -99,4 +99,13 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/kali"
+        android:layout_alignBaseline="@+id/bagi"
+        android:layout_alignBottom="@+id/bagi"
+        android:layout_toLeftOf="@+id/bagi"
+        android:layout_toStartOf="@+id/bagi" />
 </RelativeLayout>
