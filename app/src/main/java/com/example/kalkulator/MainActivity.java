@@ -88,5 +88,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        bersihkan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                angka_pertama.setText("");
+                angka_kedua.setText("");
+                hasil.setText("0");
+                angka_pertama.requestFocus();
+            }
+        });
     }
 }
