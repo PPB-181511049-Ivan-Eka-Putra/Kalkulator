@@ -3,9 +3,11 @@ package com.example.kalkulator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,5 +28,20 @@ public class MainActivity extends AppCompatActivity {
         bagi = (Button) findViewById(R.id.bagi);
         bersihkan = (Button) findViewById(R.id.bersihkan);
         hasil = (TextView) findViewById(R.id.hasil);
+
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if ((angka_pertama.getText().length() > 0) && (angka_kedua.getText().length() > 0)) {
+                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
+                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
+                    double result = angka1 + angka2;
+                    hasil.setText(Double.toString(result));
+                } else {
+                    Toast toast = Toast.makeText(MainActivity.this, "Mohon masukkan Angka pertama & kedua", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            }
+        });
     }
 }
